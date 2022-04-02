@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: transform 500ms;
+}
+
+.hide{
+    display: none;
+}
+
+/* start menu */
+.start-menu{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+}
+.menu input{
+    width: 100%;
+    height: 60px;
+    font-size: 1.5em;
+    background-color: white;
+    color: lightblue;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: lightblue;
+    margin: 5px;    
+}
+.menu input:hover{
+    background-color: lightblue;
+    color: white;
+    border-color: lightblue;
+}
+
+
+/* game */
+.game{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.game td{
+    height: 2.5em;
+    width: 2.5em;
+    font-size: 3em;
+    text-align: center;
+    color: white;
+    background-color: lightblue;
+}
+
+
+/* history  menu */
+.history{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.history table{
+    width: 40em;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+.history td, .history th{
+    background-color: lightblue;
+    color: white;
+    height: 2em;
+    width: 300px;
+    border: 1px solid lightblue;
+}
+.history td{
+    text-align: center;
+    background-color: white;
+    color: lightblue;
+}
+
+
+/* game over */
+.game-over{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: lightblue;
+    border-radius: 20px;
+    margin: auto;
+    color: white;
+    padding: 0.5em;
+}
+.game-over table{
+    width: 40em;
+}
+.game-over h2{
+    color: white;
+    text-align: center;
+}
+
+.game-over td, .game-over th{
+    text-align: center;
+    height: 2em;
+    width: 20em;
+}
+
+
+.rotate180{
+    transform: rotate3d(0, 1, 0, 180deg);
+}
+.rotate90{
+    transition-duration: 250ms;
+    transform: rotate3d(0, 1, 0, 90deg);
+}

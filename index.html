@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="start-menu hide">
+        <form name="menu" class="menu">
+            <input type="button" name="newGame" value="New Game">
+            <input type="button" name="history" value="History">
+        </form>
+    </div>
+    <div class="game hide">
+        <table>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="history hide">
+        <table>
+            <thead>
+                <tr>
+                    <th>Game ID</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="for-clone hide">
+                    <td>0</td>
+                    <td>00:00</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="game-over">
+        <h2>GAME OVER</h2>  
+        <table>
+            <thead>
+                <tr>
+                    <th>Game ID</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
